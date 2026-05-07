@@ -1,0 +1,71 @@
+@font-face{
+    font-family:'MonaS12';
+    src:url('MonaS12.ttf') format('truetype');
+  }
+  
+  body{
+    margin:0;
+    background:#ffffff;
+    font-family:'MonaS12';
+  }
+  
+  .spray-header{
+    position:fixed;
+  
+    top:28px;
+    left:32px;
+    right:32px;
+  
+    display:flex;
+    justify-content:space-between;
+  
+    z-index:100;
+  }
+  
+  .spray-header a{
+    font-family:'MonaS12';
+  
+    font-size:18px;
+    font-weight:normal;
+  
+    cursor:pointer;
+  
+    color:black;
+    text-decoration:none;
+  }
+  
+  .spray-grid{
+    height:100vh;
+  
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+    gap:10px;
+    padding:80px 40px 40px;
+    box-sizing:border-box;
+  }
+  
+  .spray-item{
+    width:22%;
+    max-width:320px;
+    height:auto;
+  }
+
+  .spray-item{
+    cursor:pointer;
+  
+    transition:
+      transform 0.25s cubic-bezier(0.65,0,0.35,1);
+  }
+  
+  /* hover 시 커짐 */
+  .spray-item:hover{
+    transform:scale(1.08);
+    z-index:10;
+  }
+  
+  /* 클릭 시 원상태 */
+  .spray-item.reset{
+    transform:scale(1);
+  }

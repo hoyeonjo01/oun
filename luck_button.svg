@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.14 115.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <g>
+      <path d="M18.99,48.22h16v2h-6v16h-4v-16h-6v-2Z"/>
+      <path d="M34.1,54.23h2v-2h8v2h2v6h-8v4h4v-2h4v2h-2v2h-8v-2h-2v-10ZM42.11,58.23v-4h-4v4h4Z"/>
+      <path d="M48.34,62.23h4v2h4v-4h-6v-2h-2v-4h2v-2h8v2h2v2h-4v-2h-4v4h6v2h2v4h-2v2h-8v-2h-2v-2Z"/>
+      <path d="M62.24,52.23h2v-4h4v4h4v2h-4v10h4v2h-6v-2h-2v-10h-2v-2Z"/>
+      <path d="M82.24,68.23h4v-6h-2v-4h-2v-6h4v6h4v-6h4v6h-2v4h-2v6h-2v2h-6v-2Z"/>
+      <path d="M96.14,56.23h2v-2h2v-2h6v2h2v2h2v6h-2v2h-2v2h-6v-2h-2v-2h-2v-6ZM102.14,62.23v2h2v-2h2v-6h-2v-2h-2v2h-2v6h2Z"/>
+      <path d="M112.28,52.23h4v12h2v-2h2v-10h4v14h-10v-2h-2v-12Z"/>
+      <path d="M126.72,52.23h4v2h2v2h-2v10h-4v-14ZM132.72,52.23h4v2h-4v-2Z"/>
+      <path d="M146.72,56.23h2v-2h2v-2h6v2h2v2h2v6h-2v2h-2v2h-6v-2h-2v-2h-2v-6ZM152.72,62.23v2h2v-2h2v-6h-2v-2h-2v2h-2v6h2Z"/>
+      <path d="M162.77,52.23h4v6h2v-6h4v6h2v-6h4v10h-2v4h-4v-4h-4v4h-4v-4h-2v-10Z"/>
+      <path d="M181.18,52.23h10v2h2v12h-4v-12h-2v2h-2v10h-4v-14Z"/>
+      <path d="M203.18,48.22h4v16h2v2h-4v-2h-2v-16Z"/>
+      <path d="M211.06,52.23h4v12h2v-2h2v-10h4v14h-10v-2h-2v-12Z"/>
+      <path d="M225.22,56.23h2v-2h2v-2h6v2h2v2h-4v-2h-2v2h-2v6h2v2h2v-2h4v2h-2v2h-6v-2h-2v-2h-2v-6Z"/>
+      <path d="M239.43,48.22h4v6h2v-2h4v2h-2v2h-2v2h-2v2h2v2h2v2h2v2h-4v-2h-2v2h-4v-18Z"/>
+      <path d="M252.3,46.22h4v14h-4v-14ZM252.3,62.23h4v4h-4v-4Z"/>
+    </g>
+    <rect class="cls-1" x="1" y="1" width="274.14" height="113.34"/>
+    <rect class="cls-1" x="5.67" y="5.8" width="264.8" height="103.74"/>
+  </g>
+</svg>
