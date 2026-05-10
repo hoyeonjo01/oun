@@ -64,7 +64,7 @@ body{
 .logo-wrap{
   position:absolute;
 
-  top:-20px;
+  top:30px;
   left:50%;
 
   transform:translateX(-50%);
@@ -91,15 +91,15 @@ body{
 .orbit{
   position:absolute;
 
-  left:0;
-  top:0;
+  left:50%;
+  top:50%;
 
   width:34px;
   height:34px;
 
   transform:translate(-50%, -50%);
 
-  offset-path:path("M50,-8 H158 C182,-8 196,10 196,34.68 C196,59 182,78 158,78 H50 C28,78 14,59 14,34.68 C14,10 28,-8 50,-8 Z");
+  offset-path:path("M-34,-28 H70 C96,-28 112,-8 112,17.68 C112,46 96,66 70,66 H-34 C-60,66 -76,46 -76,17.68 C-76,-8 -60,-28 -34,-28 Z");
 
   offset-rotate:0deg;
 
