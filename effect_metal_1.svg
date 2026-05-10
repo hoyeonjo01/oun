@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="81.33mm" height="59.76mm" viewBox="0 0 230.53 169.39">
+  <g id="_디자인" data-name="디자인">
+    <g>
+      <polygon points="26.87 39.53 0 77.2 .57 100.37 6.22 165.2 225.64 165.2 225.64 104.94 191.27 103.84 99.68 106.97 68.28 99.05 215.78 39.53 184.7 0 43.24 32.06 26.87 39.53" fill="#dce1e8"/>
+      <g>
+        <line x1="46.52" y1="37.61" x2="159.77" y2="8.54" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <line x1="11.53" y1="94.05" x2="218.39" y2="40.96" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <path d="M11.44,96.91c-6.69-26.06,9.01-52.61,35.08-59.3,26.06-6.69,52.61,9.01,59.3,35.08" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <path d="M159.77,8.54c26.06-6.69,52.61,9.01,59.3,35.08" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <line x1="11.54" y1="101.98" x2="11.54" y2="163.92" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <line x1="110.1" y1="101.98" x2="110.1" y2="163.92" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <line x1="227.78" y1="101.98" x2="227.78" y2="163.92" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <line x1="14.31" y1="99.28" x2="225.06" y2="99.28" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <line x1="14.31" y1="166.64" x2="225.06" y2="166.64" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <path d="M112.72,89.34c0-6.34,5.14-11.48,11.48-11.48s11.48,5.14,11.48,11.48" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <path d="M141.16,89.34c0-6.34,5.14-11.48,11.48-11.48s11.48,5.14,11.48,11.48" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <path d="M169.54,89.34c0-6.34,5.14-11.48,11.48-11.48s11.48,5.14,11.48,11.48" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+        <path d="M197.98,89.34c0-6.34,5.14-11.48,11.48-11.48s11.48,5.14,11.48,11.48" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

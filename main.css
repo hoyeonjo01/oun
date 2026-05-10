@@ -61,15 +61,19 @@ body{
 /* ---------------- */
 /* 로고 */
 /* ---------------- */
-
 .logo-wrap{
-    position:absolute;
-    top:-20px;
-    left:50%;
-    transform:translateX(-50%);
-    width:260px;
-    height:150px;
-  }
+  position:absolute;
+
+  top:-20px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:187.52px;
+  height:69.36px;
+
+  overflow:visible;
+}
 
 .logo{
   position:absolute;
@@ -77,57 +81,59 @@ body{
   left:50%;
   top:50%;
 
-  width:150px;
+  width:140px;
 
   transform:translate(-50%, -50%);
 
   z-index:5;
 }
 
-/* ---------------- */
-/* 오행 공전 */
-/* ---------------- */
-
 .orbit{
   position:absolute;
 
-  width:110%;
-  height:110%;
+  left:0;
+  top:0;
 
-  left:50%;
-  top:50%;
+  width:34px;
+  height:34px;
 
   transform:translate(-50%, -50%);
 
-  animation:rotateOrbit 14s linear infinite;
+  offset-path:path("M50,-8 H158 C182,-8 196,10 196,34.68 C196,59 182,78 158,78 H50 C28,78 14,59 14,34.68 C14,10 28,-8 50,-8 Z");
+
+  offset-rotate:0deg;
+
+  animation:logoOrbit 12s linear infinite;
+
+  z-index:10;
 }
 
 .orbit img{
-  position:absolute;
-
   width:34px;
-
-  left:50%;
-  top:-40;
-
-  transform:translateX(-50%);
+  display:block;
 }
 
 .orbit1{ animation-delay:0s; }
-.orbit2{ animation-delay:-2.8s; }
-.orbit3{ animation-delay:-5.6s; }
-.orbit4{ animation-delay:-8.4s; }
-.orbit5{ animation-delay:-11.2s; }
+.orbit2{ animation-delay:-1.2s; }
+.orbit3{ animation-delay:-2.4s; }
+.orbit4{ animation-delay:-3.6s; }
+.orbit5{ animation-delay:-4.8s; }
+.orbit6{ animation-delay:-6s; }
+.orbit7{ animation-delay:-7.2s; }
+.orbit8{ animation-delay:-8.4s; }
+.orbit9{ animation-delay:-9.6s; }
+.orbit10{ animation-delay:-10.8s; }
 
-@keyframes rotateOrbit{
-    from{
-      transform:translate(-50%, -50%) rotate(0deg);
-    }
-  
-    to{
-      transform:translate(-50%, -50%) rotate(360deg);
-    }
+@keyframes logoOrbit{
+  from{
+    offset-distance:0%;
   }
+
+  to{
+    offset-distance:100%;
+  }
+}
+
 
 /* ---------------- */
 /* 왼쪽 UI */
@@ -275,12 +281,15 @@ body{
 
 .effect-icon{
   position:absolute;
-  width:70px;
+
+  height:auto;
 
   opacity:0;
 
-  animation: floatElement 1.8s ease-in-out forwards;
+  animation:floatElement 1.8s ease-in-out forwards;
 }
+
+
 
 @keyframes floatElement{
   0%{

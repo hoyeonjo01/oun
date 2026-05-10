@@ -83,29 +83,50 @@ sprayBox.addEventListener("dblclick", () => {
 
 // 방 위에 오행 그래픽 띄우기
 function showElementEffects(imageList){
+
   elementEffects.innerHTML = "";
 
   const positions = [
-    { left:"18%", top:"18%" },
-    { left:"48%", top:"32%" },
-    { left:"75%", top:"20%" },
-    { left:"28%", top:"55%" },
-    { left:"68%", top:"62%" },
-    { left:"15%", top:"75%" }
+    { left:"10%", top:"14%" },
+    { left:"50%", top:"16%" },
+  
+    { left:"22%", top:"36%" },
+    { left:"58%", top:"42%" },
+  
+    { left:"12%", top:"62%" },
+    { left:"48%", top:"66%" }
   ];
 
-  positions.forEach((pos, index) => {
+  // 배치 순서 섞기
+  const layoutOrder = [
+    imageList[0], // _1
+    imageList[1], // _2
+    imageList[1], // _2
+    imageList[0], // _1
+    imageList[1], // _2
+    imageList[1]  // _2
+  ];
+
+  layoutOrder.forEach((src, index) => {
+
+    const pos = positions[index];
+
     const img = document.createElement("img");
 
-    img.src = imageList[index % imageList.length];
-    img.className = "effect-icon";
+    const imageIndex = src.includes("_1") ? 0 : 1;
+
+    img.src = src;
+    img.className = `effect-icon effect-${imageIndex}`;
 
     img.style.left = pos.left;
     img.style.top = pos.top;
+
     img.style.animationDelay = `${index * 0.12}s`;
 
     elementEffects.appendChild(img);
+
   });
+
 }
 
 // 포스텔러 갔다온 상태 표시
