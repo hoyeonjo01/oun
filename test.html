@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OUN Test</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+  <a href="main.html" class="back">Back</a>
+
+  <main class="test-page">
+
+    <h1>Find your missing OUN</h1>
+
+    <p class="guide">
+      이미 부족한 오행을 알고 있다면 아래에서 선택하세요.<br>
+      아직 모른다면 포스텔러 만세력에서 확인할 수 있어요.
+    </p>
+
+    <div class="element-select">
+      <button data-element="wood"><span>木</span><em>Wood</em></button>
+      <button data-element="fire"><span>火</span><em>Fire</em></button>
+      <button data-element="soil"><span>土</span><em>Earth</em></button>
+      <button data-element="metal"><span>金</span><em>Metal</em></button>
+      <button data-element="water"><span>水</span><em>Water</em></button>
+    </div>
+
+    <a href="https://pro.forceteller.com/" target="_blank" class="forceteller">
+      포스텔러 만세력에서 확인하기
+    </a>
+
+    <section class="result" id="result">
+
+      <h2 id="resultTitle">Your missing OUN is</h2>
+
+      <div class="graph">
+
+        <div class="graph-row" data-element="wood">
+          <span>Wood</span>
+          <div class="bar"><div></div></div>
+        </div>
+
+        <div class="graph-row" data-element="fire">
+          <span>Fire</span>
+          <div class="bar"><div></div></div>
+        </div>
+
+        <div class="graph-row" data-element="soil">
+          <span>Earth</span>
+          <div class="bar"><div></div></div>
+        </div>
+
+        <div class="graph-row" data-element="metal">
+          <span>Metal</span>
+          <div class="bar"><div></div></div>
+        </div>
+
+        <div class="graph-row" data-element="water">
+          <span>Water</span>
+          <div class="bar"><div></div></div>
+        </div>
+
+      </div>
+
+      <p class="recommend" id="recommendText"></p>
+
+      <button id="goProduct" class="product-btn">
+        Oh Spray 보러가기 →
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="test.js"></script>
+
+</body>
+</html>

@@ -1,33 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OUN</title>
 
   <link rel="stylesheet" href="main.css">
 </head>
 
-<!-- 팝업 -->
-<div class="return-popup" id="returnPopup">
-  <div class="popup-box">
-
-    <p class="popup-text">
-      당신의 부족한 오행을 확인하셨나요?<br>
-      OUN 오행분사 Oh Spray로 부족한 오행을 채워보세요!
-    </p>
-
-    <button class="popup-btn" id="goSpray">
-      Oh Spray 보러가기
-    </button>
-
-    <button class="popup-close" id="closePopup">
-      닫기
-    </button>
-
-  </div>
-</div>
 <body>
 
   <!-- 상단 메뉴 -->
@@ -36,30 +16,21 @@
     <span>About</span>
   </div>
 
-  <!-- 메인 컨테이너 -->
+  <!-- 로고 -->
+  <div class="logo-wrap">
+
+    <img src="logo.svg" class="logo">
+
+
+  </div>
+
+  <!-- 메인 -->
   <div class="main-container">
 
-    <!-- 로고 + 오행 -->
-    <div class="logo-wrap">
-
-      <img src="logo.svg" class="logo">
-
-      <div class="orbit orbit1"><img src="wood_1.svg"></div>
-      <div class="orbit orbit2"><img src="fire.svg"></div>
-      <div class="orbit orbit3"><img src="soil.svg"></div>
-      <div class="orbit orbit4"><img src="metal.svg"></div>
-      <div class="orbit orbit5"><img src="water.svg"></div>
-      <div class="orbit orbit6"><img src="wood_1.svg"></div>
-      <div class="orbit orbit7"><img src="fire.svg"></div>
-      <div class="orbit orbit8"><img src="soil.svg"></div>
-      <div class="orbit orbit9"><img src="metal.svg"></div>
-      <div class="orbit orbit10"><img src="water.svg"></div>
-    </div>
-
-    <!-- 왼쪽 인터랙션 -->
+    <!-- 왼쪽 UI -->
     <div class="left-ui">
 
-      <img src="hand.svg" class="floating hand">
+      <img src="hand.png" class="floating hand">
 
       <div class="luck-button-wrap">
         <img src="luck_button.svg" class="luck-button">
@@ -74,16 +45,18 @@
 
       <div class="room-visual">
         <img src="room.svg" class="room">
+
         <div class="room-color"></div>
+
         <div class="element-effects"></div>
       </div>
-    
-      <img src="person.svg" class="person">
-    
-      <div class="room-title">
-        Tune Your OUN Luck!
+
+      <div class="room-title-wrap">
+        <div class="room-title">
+          Tune Your OUN Luck!  Tune Your OUN Luck!  Tune Your OUN Luck! 
+        </div>
       </div>
-    
+
     </div>
 
     <!-- 부적 -->
@@ -91,9 +64,31 @@
       <img src="talisman_card.svg" class="talisman-card">
     </div>
 
-    <!-- 룸스프레이 -->
+    <!-- 스프레이 -->
     <div class="spray-area">
       <img src="spray_box.svg" class="spray-box">
+    </div>
+
+  </div>
+
+  <!-- 팝업 -->
+  <div class="return-popup" id="returnPopup">
+
+    <div class="popup-box">
+
+      <p class="popup-text">
+        당신의 부족한 오행을 확인하셨나요?<br>
+        OUN 오행분사 Oh Spray로 부족한 오행을 채워보세요!
+      </p>
+
+      <button class="popup-btn" id="goSpray">
+        Oh Spray 보러가기
+      </button>
+
+      <button class="popup-close" id="closePopup">
+        닫기
+      </button>
+
     </div>
 
   </div>
@@ -102,4 +97,3 @@
 
 </body>
 </html>
-```

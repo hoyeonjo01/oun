@@ -2,6 +2,11 @@
     font-family:'MonaS12Bold';
     src:url('MonaS12-Bold.ttf') format('truetype');
   }
+@font-face{
+    font-family:'MonaS12';
+    src:url('MonaS12.ttf') format('truetype');
+  }
+  
   
   body{
     margin:0;

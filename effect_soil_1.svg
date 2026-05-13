@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="86.72mm" height="35.44mm" viewBox="0 0 245.81 100.47">
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="41.48mm" height="49.61mm" viewBox="0 0 117.59 140.62">
+  <g id="_컬러" data-name="컬러">
+    <polygon points="97.88 47.5 27.62 47.5 27.62 65.03 43.37 65.03 43.37 70.67 48.83 70.67 48.83 83 77.23 83 77.23 70.67 82.39 70.67 82.39 65.03 97.88 65.03 97.88 47.5" fill="#eede4f"/>
+    <path d="M51.56,12.01c3.32-7.15,11.8-10.26,18.96-6.94,7.15,3.32,10.26,11.8,6.94,18.96" fill="#eede4f"/>
+  </g>
   <g id="_디자인" data-name="디자인">
     <g>
-      <rect y="63.53" width="245.81" height="36.95" fill="#eede4f"/>
-      <g>
-        <path d="M45.31,28.85v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <path d="M45.31,44.08v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <path d="M45.31,72.04v-25.16s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <path d="M76.13,28.85v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <path d="M76.13,44.08v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <path d="M76.13,72.04v-25.16s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-      </g>
-      <line x1="3.7" y1="72.04" x2="118.79" y2="72.04" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-      <g>
-        <g>
-          <path d="M172.06,49.8v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-          <path d="M172.06,65.03v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-          <path d="M172.06,92.99v-25.16s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-          <path d="M202.88,49.8v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-          <path d="M202.88,65.03v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-          <path d="M202.88,92.99v-25.16s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        </g>
-        <line x1="126.07" y1="92.99" x2="241.16" y2="92.99" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-      </g>
+      <line x1="28.81" y1="3.73" x2="88.78" y2="31.55" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <circle cx="58.8" cy="17.64" r="14.89" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="117.59" y1="47.73" y2="47.73" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="78.39" y1="85.81" x2="39.42" y2="85.81" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="39.31" y1="68.01" x2="23.69" y2="68.01" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="93.95" y1="68.01" x2="78.33" y2="68.01" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="20.92" y1="65.25" x2="20.92" y2="47.73" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="42.17" y1="70.89" x2="42.17" y2="88.42" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="75.64" y1="88.23" x2="75.64" y2="70.7" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="96.67" y1="65.25" x2="96.67" y2="47.73" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <line x1="58.91" y1="88.42" x2="58.91" y2="140.62" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
     </g>
   </g>
 </svg>

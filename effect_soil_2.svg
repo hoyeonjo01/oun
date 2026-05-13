@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="41.48mm" height="49.61mm" viewBox="0 0 117.59 140.62">
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="83.8mm" height="34.88mm" viewBox="0 0 237.54 98.86">
+  <g id="_컬러" data-name="컬러">
+    <rect y="61.91" width="237.54" height="36.95" fill="#eede4f"/>
+  </g>
   <g id="_디자인" data-name="디자인">
     <g>
-      <polygon points="68.39 7.73 58.31 6.25 50.78 10.82 49.83 24.13 61.4 31.26 72.56 21.04 72.56 8.69 68.39 7.73" fill="#eede4f"/>
-      <polyline points="26.5 49.81 26.5 67.25 33.41 70.01 46.47 86.51 74.47 87.81 75.22 72.7 89.75 70.01 96.25 63.51 96.25 49.73 26.5 49.81" fill="#eede4f"/>
-      <g>
-        <line x1="28.81" y1="3.73" x2="88.78" y2="31.55" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <circle cx="58.8" cy="17.64" r="14.89" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="117.59" y1="47.73" y2="47.73" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="78.39" y1="85.81" x2="39.42" y2="85.81" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="39.31" y1="68.01" x2="23.69" y2="68.01" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="93.95" y1="68.01" x2="78.33" y2="68.01" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="20.92" y1="65.25" x2="20.92" y2="47.73" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="42.17" y1="70.89" x2="42.17" y2="88.42" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="75.64" y1="88.23" x2="75.64" y2="70.7" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="96.67" y1="65.25" x2="96.67" y2="47.73" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-        <line x1="58.91" y1="88.42" x2="58.91" y2="140.62" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
-      </g>
+      <path d="M54.72,28.85v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M54.72,44.08v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M54.72,72.04v-25.16s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M85.55,28.85v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M85.55,44.08v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M85.55,72.04v-25.16s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
     </g>
+    <line x1="4.73" y1="72.04" x2="119.83" y2="72.04" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+    <g>
+      <path d="M165.37,47.78v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M165.37,63.01v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M165.37,90.97v-25.16s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M196.19,47.78v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M196.19,63.01v-12.43s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+      <path d="M196.19,90.97v-25.16s0-2.12,0-2.12c0-6.38,5.17-11.56,11.56-11.56" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
+    </g>
+    <line x1="115.38" y1="90.97" x2="230.47" y2="90.97" fill="none" stroke="#231815" stroke-miterlimit="10" stroke-width="5.5"/>
   </g>
 </svg>

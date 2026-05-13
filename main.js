@@ -70,7 +70,7 @@ sprayBox.addEventListener("click", () => {
       elementEffects.innerHTML = "";
       sprayAnimating = false;
 
-    }, 2200);
+    }, 4200);
 
   }, 220);
 });

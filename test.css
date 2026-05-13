@@ -1,0 +1,212 @@
+@font-face{
+    font-family:'MonaS12';
+    src:url('MonaS12.ttf') format('truetype');
+  }
+  
+  @font-face{
+    font-family:'MonaS12Bold';
+    src:url('MonaS12-Bold.ttf') format('truetype');
+  }
+  
+  body{
+    margin:0;
+    background:#ffffff;
+    font-family:'MonaS12';
+    color:black;
+  }
+  
+  .back{
+    position:fixed;
+    top:28px;
+    left:32px;
+  
+    color:black;
+    text-decoration:none;
+    font-size:18px;
+  
+    z-index:10;
+  }
+  
+  .test-page{
+    min-height:100vh;
+    padding:90px 40px 60px;
+    box-sizing:border-box;
+  
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  
+  h1{
+    margin:30px 0 24px;
+  
+    font-family:'MonaS12Bold';
+    font-size:46px;
+  }
+  
+  .guide{
+    text-align:center;
+    font-size:18px;
+    line-height:1.7;
+  
+    margin:0 0 32px;
+  }
+  
+  .element-select{
+    display:flex;
+    gap:14px;
+  
+    margin-bottom:24px;
+  }
+  
+  .element-select button{
+    width:150px;
+    height:120px;
+  
+    border:2px solid black;
+    background:white;
+  
+    font-family:'MonaS12';
+    cursor:pointer;
+  
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+  
+    transition:0.2s;
+  }
+  
+  .element-select button span{
+    font-family:'MonaS12Bold';
+    font-size:46px;
+  }
+  
+  .element-select button em{
+    font-style:normal;
+    font-size:18px;
+  }
+  
+  .element-select button:hover,
+  .element-select button.selected{
+    transform:scale(1.06);
+  }
+  
+  .element-select button[data-element="wood"]{ background:#7bc9c8; }
+  .element-select button[data-element="fire"]{ background:#ee8db4; }
+  .element-select button[data-element="soil"]{ background:#f8e748; }
+  .element-select button[data-element="metal"]{ background:#dce3e9; }
+  .element-select button[data-element="water"]{ background:#3ba0cf; }
+  
+  .forceteller{
+    color:black;
+    font-size:16px;
+    text-decoration:none;
+    border-bottom:2px solid black;
+  
+    margin-bottom:34px;
+  }
+  
+  .result{
+    display:none;
+  
+    width:620px;
+  
+    border:2px solid black;
+    padding:26px 30px 30px;
+  
+    box-sizing:border-box;
+  }
+  
+  .result.show{
+    display:block;
+  }
+  
+  #resultTitle{
+    margin:0 0 24px;
+  
+    text-align:center;
+  
+    font-family:'MonaS12Bold';
+    font-size:30px;
+  }
+  
+  .graph{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  
+  .graph-row{
+    display:grid;
+    grid-template-columns:90px 1fr;
+    align-items:center;
+    gap:16px;
+  }
+  
+  .graph-row span{
+    font-size:18px;
+  }
+  
+  .bar{
+    height:24px;
+  
+    border:2px solid black;
+    background:#eeeeee;
+  
+    overflow:hidden;
+  }
+  
+  .bar div{
+    height:100%;
+    width:0%;
+  
+    background:#dddddd;
+  
+    transition:width 0.8s cubic-bezier(0.65,0,0.35,1);
+  }
+  
+  .graph-row:not(.active) .bar div{
+    width:78%;
+    background:#dddddd;
+  }
+  
+  .graph-row.active .bar div{
+    width:32%;
+  }
+  
+  .graph-row.wood.active .bar div{ background:#7bc9c8; }
+  .graph-row.fire.active .bar div{ background:#ee8db4; }
+  .graph-row.soil.active .bar div{ background:#f8e748; }
+  .graph-row.metal.active .bar div{ background:#dce3e9; }
+  .graph-row.water.active .bar div{ background:#3ba0cf; }
+  
+  .recommend{
+    margin:24px 0 20px;
+  
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+  }
+  
+  .product-btn{
+    display:block;
+    margin:0 auto;
+  
+    font-family:'MonaS12';
+    font-size:18px;
+  
+    padding:12px 22px;
+  
+    border:2px solid black;
+    background:white;
+  
+    cursor:pointer;
+  
+    transition:0.2s;
+  }
+  
+  .product-btn:hover{
+    transform:scale(1.05);
+  }
