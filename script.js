@@ -4,7 +4,7 @@ const video = document.querySelector(".loading-video");
 
 setTimeout(() => {
   icons.classList.add("hide");
-}, 1600);
+}, 2600);
 
 setTimeout(() => {
   video.classList.add("show");
@@ -12,6 +12,15 @@ setTimeout(() => {
   video.play();
 }, 1900);
 
-video.addEventListener("ended", () => {
+let moved = false;
+
+function goToMain() {
+  if (moved) return;
+  moved = true;
   window.location.href = "main.html";
-});
+}
+
+video.addEventListener("ended", goToMain);
+
+// 5초 후 무조건 이동
+setTimeout(goToMain, 5000);
