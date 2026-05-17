@@ -90,15 +90,6 @@
     top:185px;
   }
   
-  .hand{
-    position:absolute;
-    width:500px;
-    left:-190px;
-    top:60px;
-    z-index:10;
-    pointer-events:none;
-  }
-  
   .jump{
     position:absolute;
     width:110px;
