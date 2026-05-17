@@ -22,12 +22,15 @@ body {
   /* ---------------- */
   
   .icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     display: flex;
     gap: 18px;
-  
-    transition:
-      opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1),
-      transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    align-items: center;
+    justify-content: center;
   }
   
   .icons.hide {
@@ -58,73 +61,34 @@ body {
   }
   
   /* ---------------- */
-  /* 텍스트 영역 */
+  /* 로고 애니메이션 영역 */
   /* ---------------- */
+  
+  .loading-screen {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+  }
   
   .text-area {
-    position: relative;
-  
-    width: 180px;
-    height: 60px;
-    margin-top: -100px;
-  }
-  
-  .korean,
-  .english {
     position: absolute;
-  
-    left: 50%;
     top: 50%;
-  
+    left: 50%;
     transform: translate(-50%, -50%);
   }
   
-  /* ---------------- */
-  /* 오운 */
-  /* ---------------- */
-  
-  .korean {
-    width: 120px;
+  .loading-video {
+    width: 520px;
+    max-width: 70vw;
+    height: auto;
+    pointer-events: none;
   
     opacity: 0;
-  
-    transition:
-      opacity 0.6s cubic-bezier(0.65, 0, 0.35, 1),
-      transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: opacity 0.8s ease;
   }
   
-  .korean.show {
+  .loading-video.show {
     opacity: 1;
-  }
-  
-  .korean.hide {
-    opacity: 0;
-    transform: translate(-50%, calc(-50% - 8px));
-  }
-  
-  /* ---------------- */
-  /* oun */
-  /* ---------------- */
-  
-  .english {
-    width: 200px;
-  
-    opacity: 0;
-  
-    transform: translate(-50%, calc(-50% + 2px));
-  
-    transition:
-      opacity 0.6s cubic-bezier(0.65, 0, 0.35, 1),
-      transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
-  }
-  
-  .english.show {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-
-loading-screen.fade-out {
-        opacity: 0;
-        transition: opacity 1s ease;
-        pointer-events: none;
-      }
   }
