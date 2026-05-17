@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -13,69 +13,105 @@
 
   <main class="test-page">
 
-    <h1>Find your missing OUN</h1>
+    <section class="birth-form" id="birthForm">
 
-    <p class="guide">
-      이미 부족한 오행을 알고 있다면 아래에서 선택하세요.<br>
-      아직 모른다면 포스텔러 만세력에서 확인할 수 있어요.
-    </p>
+      <h1>Find your missing OUN</h1>
 
-    <div class="element-select">
-      <button data-element="wood"><span>木</span><em>Wood</em></button>
-      <button data-element="fire"><span>火</span><em>Fire</em></button>
-      <button data-element="soil"><span>土</span><em>Earth</em></button>
-      <button data-element="metal"><span>金</span><em>Metal</em></button>
-      <button data-element="water"><span>水</span><em>Water</em></button>
-    </div>
+      <p class="guide">
+        이름, 생년월일, 태어난 시각을 입력해 주세요.
+      </p>
 
-    <a href="https://pro.forceteller.com/" target="_blank" class="forceteller">
-      포스텔러 만세력에서 확인하기
-    </a>
-
-    <section class="result" id="result">
-
-      <h2 id="resultTitle">Your missing OUN is</h2>
-
-      <div class="graph">
-
-        <div class="graph-row" data-element="wood">
-          <span>Wood</span>
-          <div class="bar"><div></div></div>
-        </div>
-
-        <div class="graph-row" data-element="fire">
-          <span>Fire</span>
-          <div class="bar"><div></div></div>
-        </div>
-
-        <div class="graph-row" data-element="soil">
-          <span>Earth</span>
-          <div class="bar"><div></div></div>
-        </div>
-
-        <div class="graph-row" data-element="metal">
-          <span>Metal</span>
-          <div class="bar"><div></div></div>
-        </div>
-
-        <div class="graph-row" data-element="water">
-          <span>Water</span>
-          <div class="bar"><div></div></div>
-        </div>
-
+      <div class="form-fields">
+        <label>
+          <span>이름</span>
+          <input type="text" id="userName" placeholder="이름을 입력하세요" autocomplete="name">
+        </label>
+        <label>
+          <span>생년월일</span>
+          <input type="date" id="birthDate" max="9999-12-31">
+        </label>
+        <label>
+          <span>태어난 시각</span>
+          <input type="time" id="birthTime">
+        </label>
+        <div style="display: block;">
+        <label class="checkbox-label" for="birthTimeUnknown" >
+          
+          <input type="checkbox" id="birthTimeUnknown">
+          태어난 시각 모름
+          
+        </label>
+      </div>
       </div>
 
-      <p class="recommend" id="recommendText"></p>
+      <p class="form-error" id="formError" hidden></p>
 
-      <button id="goProduct" class="product-btn">
-        Oh Spray 보러가기 →
-      </button>
+      <button type="button" id="showResultBtn" class="submit-btn">결과 보기</button>
+
+    </section>
+
+    <section class="test-main" id="testMain">
+
+      <h1>Find your missing OUN</h1>
+
+      <p class="guide" id="resultGuide"></p>
+
+      <p class="pillars" id="pillarsText"></p>
+
+      <section class="result show" id="result">
+
+        <h2 id="resultTitle">Your missing OUN is</h2>
+
+        <div class="graph">
+
+          <div class="graph-row" data-element="wood">
+            <span>Wood</span>
+            <div class="bar"><div></div></div>
+            <span class="pct" data-pct="wood">0%</span>
+          </div>
+
+          <div class="graph-row" data-element="fire">
+            <span>Fire</span>
+            <div class="bar"><div></div></div>
+            <span class="pct" data-pct="fire">0%</span>
+          </div>
+
+          <div class="graph-row" data-element="soil">
+            <span>Earth</span>
+            <div class="bar"><div></div></div>
+            <span class="pct" data-pct="soil">0%</span>
+          </div>
+
+          <div class="graph-row" data-element="metal">
+            <span>Metal</span>
+            <div class="bar"><div></div></div>
+            <span class="pct" data-pct="metal">0%</span>
+          </div>
+
+          <div class="graph-row" data-element="water">
+            <span>Water</span>
+            <div class="bar"><div></div></div>
+            <span class="pct" data-pct="water">0%</span>
+          </div>
+
+        </div>
+
+        <p class="recommend" id="recommendText"></p>
+
+        <button id="goProduct" class="product-btn">
+          Oh Spray 보러가기 →
+        </button>
+
+      </section>
 
     </section>
 
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/lunar-javascript@1.7.7/lunar.js"></script>
+  <script src="manseryeok.js"></script>
   <script src="test.js"></script>
 
 </body>
 </html>
+

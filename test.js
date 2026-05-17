@@ -1,10 +1,21 @@
-const buttons = document.querySelectorAll(".element-select button");
+const birthForm = document.getElementById("birthForm");
+const testMain = document.getElementById("testMain");
+const showResultBtn = document.getElementById("showResultBtn");
+const formError = document.getElementById("formError");
+const userNameInput = document.getElementById("userName");
+const birthDateInput = document.getElementById("birthDate");
+const birthTimeInput = document.getElementById("birthTime");
+const birthTimeUnknown = document.getElementById("birthTimeUnknown");
+
+const MIN_YEAR = 1950;
+const MAX_YEAR = 2026;
+const resultGuide = document.getElementById("resultGuide");
+const pillarsText = document.getElementById("pillarsText");
 const result = document.getElementById("result");
 const resultTitle = document.getElementById("resultTitle");
 const recommendText = document.getElementById("recommendText");
 const goProduct = document.getElementById("goProduct");
 const rows = document.querySelectorAll(".graph-row");
-
 const elementData = {
   wood: {
     name: "Wood",
@@ -35,31 +46,145 @@ const elementData = {
 
 let selectedLink = "spray.html";
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const selected = button.dataset.element;
-    const data = elementData[selected];
+function showFormError(message) {
+  formError.textContent = message;
+  formError.hidden = false;
+}
 
-    buttons.forEach((btn) => btn.classList.remove("selected"));
-    button.classList.add("selected");
+function clearFormError() {
+  formError.textContent = "";
+  formError.hidden = true;
+}
 
-    result.classList.add("show");
+function setBirthDateInvalid(invalid) {
+  birthDateInput.classList.toggle("input-invalid", invalid);
+}
 
-    resultTitle.innerText = `Your missing OUN is ${data.name}`;
-    recommendText.innerText = data.text;
-    selectedLink = data.link;
+function clearFieldErrors() {
+  setBirthDateInvalid(false);
+}
 
-    rows.forEach((row) => {
-      const rowElement = row.dataset.element;
+function parseBirthInputs() {
+  const name = userNameInput.value.trim();
+  const dateValue = birthDateInput.value;
+  const timeUnknown = birthTimeUnknown.checked;
+  const timeValue = timeUnknown ? "00:00" : birthTimeInput.value;
 
-      row.classList.remove("active", "wood", "fire", "soil", "metal", "water");
-      row.classList.add(rowElement);
+  clearFieldErrors();
 
-      if(rowElement === selected){
-        row.classList.add("active");
-      }
-    });
+  if (!name) {
+    showFormError("이름을 입력해 주세요.");
+    return null;
+  }
+
+  if (!dateValue) {
+    showFormError("생년월일을 입력해 주세요.");
+    return null;
+  }
+
+  const [year, month, day] = dateValue.split("-").map(Number);
+
+  if (!year || !month || !day) {
+    showFormError("생년월일 형식을 확인해 주세요.");
+    return null;
+  }
+
+  if (year < MIN_YEAR || year > MAX_YEAR) {
+    setBirthDateInvalid(true);
+    showFormError("생년월일을 정확하게 입력해 주세요. (1900~2026년)");
+    return null;
+  }
+
+  if (!timeUnknown && !birthTimeInput.value) {
+    showFormError("태어난 시각을 입력하거나 '태어난 시각 모름'을 선택해 주세요.");
+    return null;
+  }
+
+  const [hour, minute] = timeValue.split(":").map(Number);
+
+  if (Number.isNaN(hour) || Number.isNaN(minute)) {
+    showFormError("태어난 시각 형식을 확인해 주세요.");
+    return null;
+  }
+
+  clearFormError();
+  return { name, year, month, day, hour, minute, timeUnknown };
+}
+
+birthTimeUnknown.addEventListener("change", () => {
+  if (birthTimeUnknown.checked) {
+    birthTimeInput.value = "00:00";
+    birthTimeInput.disabled = true;
+  } else {
+    birthTimeInput.disabled = false;
+    birthTimeInput.value = "";
+  }
+});
+
+birthDateInput.addEventListener("input", () => {
+  setBirthDateInvalid(false);
+  clearFormError();
+});
+
+function renderElementResult(balance, name) {
+  const { percentages, weakest, pillars } = balance;
+  const primaryWeak = weakest[0];
+  const data = elementData[primaryWeak];
+
+  selectedLink = data.link;
+  resultGuide.textContent = `${name}님의 만세력(사주) 기준 오행 비중이에요.`;
+  pillarsText.textContent = `년주 ${pillars.year} · 월주 ${pillars.month} · 일주 ${pillars.day} · 시주 ${pillars.time}`;
+
+  if (weakest.length === 1) {
+    resultTitle.textContent = `Your missing OUN is ${data.name}`;
+    recommendText.textContent = data.text;
+  } else {
+    const names = weakest.map((key) => elementData[key].name).join(", ");
+    resultTitle.textContent = `Your missing OUN is ${names}`;
+    recommendText.textContent = `${names} OUN이 상대적으로 부족해요. 부족한 오행의 에너지를 채워보세요.`;
+  }
+
+  rows.forEach((row) => {
+    const element = row.dataset.element;
+    const bar = row.querySelector(".bar div");
+    const pct = percentages[element] ?? 0;
+    const isWeak = weakest.includes(element);
+
+    row.classList.remove("active", "wood", "fire", "soil", "metal", "water");
+    row.classList.add(element);
+    row.classList.toggle("active", isWeak);
+
+    bar.style.width = `${pct}%`;
+
+    const pctLabel = row.querySelector(".pct");
+    if (pctLabel) {
+      pctLabel.textContent = `${pct}%`;
+    }
   });
+}
+
+showResultBtn.addEventListener("click", () => {
+  const birth = parseBirthInputs();
+  if (!birth) return;
+
+  if (typeof calculateElementBalance !== "function") {
+    showFormError("만세력 계산 모듈을 불러오지 못했어요. 새로고침 후 다시 시도해 주세요.");
+    return;
+  }
+
+  const balance = calculateElementBalance(
+    birth.year,
+    birth.month,
+    birth.day,
+    birth.hour,
+    birth.minute
+  );
+
+  birthForm.classList.add("hide");
+  testMain.classList.add("show");
+  result.classList.add("show");
+
+  renderElementResult(balance, birth.name);
 });
 
 goProduct.addEventListener("click", () => {
