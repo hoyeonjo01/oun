@@ -13,13 +13,5 @@ setTimeout(() => {
 }, 1900);
 
 video.addEventListener("ended", () => {
-
-  setTimeout(() => {
-    loadingScreen.classList.add("fade-out");
-  }, 3000);
-
-  setTimeout(() => {
-    window.location.href = "main.html";
-  }, 4500);
-
+  window.location.href = "main.html";
 });
