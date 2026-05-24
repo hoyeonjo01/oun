@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" width="582.43" height="283.32" viewBox="0 0 582.43 283.32">
+  <g id="main">
+    <g>
+      <rect x="1.5" y="1.5" width="579.43" height="280.32" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <rect x="19.08" y="77.41" width="541.51" height="183.06" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <rect x="17.85" y="15.77" width="542.74" height="44.75" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <rect x="19.04" y="15.77" width="498.13" height="44.75"/>
+      <text transform="translate(527.32 53.02)" font-family="MonaS12-Bold, MonaS12" font-size="37.87" font-weight="700"><tspan x="0" y="0">X</tspan></text>
+      <text transform="translate(30.47 51.56)" fill="#fff" font-family="MonaS12-Bold, MonaS12" font-size="37.87" font-weight="700"><tspan x="0" y="0" letter-spacing="0em">Q</tspan><tspan x="28.68" y="0" letter-spacing=".01em">u</tspan><tspan x="51.27" y="0" letter-spacing="0em">e</tspan><tspan x="73.58" y="0" letter-spacing="0em">s</tspan><tspan x="95.35" y="0">t</tspan></text>
+      <text transform="translate(79.27 138.86)" fill="#231815" font-family="MonaS12-Bold, MonaS12" font-size="37.87" font-weight="700"><tspan x="0" y="0" letter-spacing="0em">F</tspan><tspan x="21.76" y="0" letter-spacing=".01em">i</tspan><tspan x="31.71" y="0" letter-spacing="0em">n</tspan><tspan x="53.84" y="0">d </tspan><tspan x="88.55" y="0" letter-spacing="0em">y</tspan><tspan x="110.32" y="0" letter-spacing="0em">o</tspan><tspan x="135.63" y="0" letter-spacing=".01em">u</tspan><tspan x="158.27" y="0">r </tspan><tspan x="189.82" y="0" letter-spacing="0em">M</tspan><tspan x="221.7" y="0" letter-spacing="0em">i</tspan><tspan x="231.45" y="0" letter-spacing="0em">s</tspan><tspan x="253.59" y="0" letter-spacing="0em">s</tspan><tspan x="276.05" y="0" letter-spacing=".01em">i</tspan><tspan x="285.99" y="0" letter-spacing=".01em">n</tspan><tspan x="308.48" y="0" letter-spacing="0em">g </tspan><tspan x="343.19" y="0" letter-spacing="0em">O</tspan><tspan x="371.38" y="0" letter-spacing="0em">U</tspan><tspan x="396.62" y="0" letter-spacing="0em">N</tspan></text>
+      <rect x="135.06" y="177.2" width="323.61" height="55.03"/>
+      <rect x="123.77" y="168.94" width="323.61" height="55.03" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <text transform="translate(171.72 206.38)" fill="#231815" font-family="MonaS12-Bold, MonaS12" font-size="28.02" font-weight="700"><tspan x="0" y="0" letter-spacing="-.04em">사</tspan><tspan x="27" y="0">주 </tspan><tspan x="64.35" y="0" letter-spacing="-.05em">검</tspan><tspan x="91.05" y="0">사 </tspan><tspan x="128.4" y="0" letter-spacing="0em">하</tspan><tspan x="156.31" y="0" letter-spacing="-.05em">러가</tspan><tspan x="209.7" y="0" letter-spacing="0em">기</tspan></text>
+    </g>
+  </g>
+</svg>

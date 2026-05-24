@@ -8,110 +8,110 @@
 </head>
 
 <body>
-
-  <a href="main.html" class="back">Back</a>
-
   <main class="test-page">
 
-    <section class="birth-form" id="birthForm">
+    <div class="test-side">
+      <button class="test-side-btn" onclick="location.href='main.html'">홈으로</button>
+      <button class="test-side-btn" onclick="location.href='shop.html'">상점 바로가기</button>
+    </div>
 
-      <h1>Find your missing OUN</h1>
+    <div class="test-window-wrap">
+      <img src="test_window.svg" class="test-window">
 
-      <p class="guide">
-        이름, 생년월일, 태어난 시각을 입력해 주세요.
-      </p>
+      <section class="birth-form" id="birthForm">
+        <h1>Find your missing OUN</h1>
+        <p class="guide">이름, 생년월일, 태어난 시각을 입력해 주세요.</p>
 
-      <div class="form-fields">
-        <label>
-          <span>이름</span>
-          <input type="text" id="userName" placeholder="이름을 입력하세요" autocomplete="name">
-        </label>
-        <label>
-          <span>생년월일</span>
-          <input type="date" id="birthDate" max="9999-12-31">
-        </label>
-        <label>
-          <span>태어난 시각</span>
-          <input type="time" id="birthTime">
-        </label>
-        <div style="display: block;">
-        <label class="checkbox-label" for="birthTimeUnknown" >
-          
-          <input type="checkbox" id="birthTimeUnknown">
-          태어난 시각 모름
-          
-        </label>
-      </div>
-      </div>
+        <div class="form-fields">
+          <label>
+            <span>이름</span>
+            <input type="text" id="userName" placeholder="이름을 입력하세요">
+          </label>
 
-      <p class="form-error" id="formError" hidden></p>
+          <label>
+            <span>생년월일</span>
+            <input type="date" id="birthDate" max="9999-12-31">
+          </label>
 
-      <button type="button" id="showResultBtn" class="submit-btn">결과 보기</button>
+          <label>
+            <span>태어난 시각</span>
+            <input type="time" id="birthTime">
+          </label>
 
-    </section>
-
-    <section class="test-main" id="testMain">
-
-      <h1>Find your missing OUN</h1>
-
-      <p class="guide" id="resultGuide"></p>
-
-      <p class="pillars" id="pillarsText"></p>
-
-      <section class="result show" id="result">
-
-        <h2 id="resultTitle">Your missing OUN is</h2>
-
-        <div class="graph">
-
-          <div class="graph-row" data-element="wood">
-            <span>Wood</span>
-            <div class="bar"><div></div></div>
-            <span class="pct" data-pct="wood">0%</span>
-          </div>
-
-          <div class="graph-row" data-element="fire">
-            <span>Fire</span>
-            <div class="bar"><div></div></div>
-            <span class="pct" data-pct="fire">0%</span>
-          </div>
-
-          <div class="graph-row" data-element="soil">
-            <span>Earth</span>
-            <div class="bar"><div></div></div>
-            <span class="pct" data-pct="soil">0%</span>
-          </div>
-
-          <div class="graph-row" data-element="metal">
-            <span>Metal</span>
-            <div class="bar"><div></div></div>
-            <span class="pct" data-pct="metal">0%</span>
-          </div>
-
-          <div class="graph-row" data-element="water">
-            <span>Water</span>
-            <div class="bar"><div></div></div>
-            <span class="pct" data-pct="water">0%</span>
-          </div>
-
+          <label class="checkbox-label">
+            <input type="checkbox" id="birthTimeUnknown">
+            <span>태어난 시각 모름</span>
+          </label>
         </div>
 
-        <p class="recommend" id="recommendText"></p>
+        <p class="form-error" id="formError" hidden></p>
 
-        <button id="goProduct" class="product-btn">
-          Oh Spray 보러가기 →
+        <button type="button" id="showResultBtn" class="submit-btn">
+          결과 보기
         </button>
-
       </section>
 
-    </section>
+      <section class="test-main" id="testMain">
+        <p class="guide result-guide" id="resultGuide"></p>
+        <p class="pillars" id="pillarsText"></p>
 
+        <section class="result show" id="result">
+          <h2 id="resultTitle">Your missing OUN is</h2>
+          <div class="graph">
+            <div class="graph-row" data-element="wood">
+              <span>Wood</span>
+              <div class="bar">
+                <div class="fill"></div>
+              </div>
+              <span class="pct" data-pct="wood">0%</span>
+            </div>
+
+            <div class="graph-row" data-element="fire">
+              <span>Fire</span>
+              <div class="bar">
+                <div class="fill"></div>
+              </div>
+              <span class="pct" data-pct="fire">0%</span>
+            </div>
+
+            <div class="graph-row" data-element="soil">
+              <span>Earth</span>
+              <div class="bar">
+                <div class="fill"></div>
+              </div>
+              <span class="pct" data-pct="soil">0%</span>
+            </div>
+
+            <div class="graph-row" data-element="metal">
+              <span>Metal</span>
+              <div class="bar">
+                <div class="fill"></div>
+              </div>
+              <span class="pct" data-pct="metal">0%</span>
+            </div>
+
+            <div class="graph-row" data-element="water">
+              <span>Water</span>
+              <div class="bar">
+                <div class="fill"></div>
+              </div>
+              <span class="pct" data-pct="water">0%</span>
+            </div>
+          </div>
+
+          <p class="recommend" id="recommendText"></p>
+        </section>
+
+        <div class="missing-area">
+          <div class="missing-title">Your missing OUN :</div>
+          <div class="missing-visuals" id="missingVisuals"></div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/lunar-javascript@1.7.7/lunar.js"></script>
-  <script src="manseryeok.js"></script>
-  <script src="test.js"></script>
-
+  <script src="manseryeok.js?v=100"></script>
+<script src="test.js?v=100"></script>
 </body>
 </html>
-

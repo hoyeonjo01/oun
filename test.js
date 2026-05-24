@@ -14,8 +14,6 @@ const pillarsText = document.getElementById("pillarsText");
 const result = document.getElementById("result");
 const resultTitle = document.getElementById("resultTitle");
 const recommendText = document.getElementById("recommendText");
-const goProduct = document.getElementById("goProduct");
-const rows = document.querySelectorAll(".graph-row");
 const elementData = {
   wood: {
     name: "Wood",
@@ -130,23 +128,35 @@ function renderElementResult(balance, name) {
   const { percentages, weakest, pillars } = balance;
   const primaryWeak = weakest[0];
   const data = elementData[primaryWeak];
+  const rows = document.querySelectorAll(".graph-row");
+  
 
   selectedLink = data.link;
   resultGuide.textContent = `${name}님의 만세력(사주) 기준 오행 비중이에요.`;
   pillarsText.textContent = `년주 ${pillars.year} · 월주 ${pillars.month} · 일주 ${pillars.day} · 시주 ${pillars.time}`;
 
   if (weakest.length === 1) {
-    resultTitle.textContent = `Your missing OUN is ${data.name}`;
+    if (resultTitle) {
+      resultTitle.textContent = "";
+    }
+  
     recommendText.textContent = data.text;
+  
   } else {
+  
+    if (resultTitle) {
+      resultTitle.textContent = "";
+    }
+  
     const names = weakest.map((key) => elementData[key].name).join(", ");
-    resultTitle.textContent = `Your missing OUN is ${names}`;
-    recommendText.textContent = `${names} OUN이 상대적으로 부족해요. 부족한 오행의 에너지를 채워보세요.`;
+  
+    recommendText.textContent =
+      `${names} OUN이 상대적으로 부족해요. 부족한 오행의 에너지를 채워보세요.`;
   }
 
   rows.forEach((row) => {
     const element = row.dataset.element;
-    const bar = row.querySelector(".bar div");
+    const bar = row.querySelector(".fill");
     const pct = percentages[element] ?? 0;
     const isWeak = weakest.includes(element);
 
@@ -161,7 +171,27 @@ function renderElementResult(balance, name) {
       pctLabel.textContent = `${pct}%`;
     }
   });
+  const visualMap = {
+    wood: "wood_result.svg",
+    fire: "fire_result.svg",
+    soil: "earth_result.svg",
+    metal: "metal_result.svg",
+    water: "water_result.svg"
+  };
+  
+  const missingVisuals = document.getElementById("missingVisuals");
+  if (missingVisuals) {
+    missingVisuals.innerHTML = "";
+  
+    weakest.forEach((key) => {
+      const img = document.createElement("img");
+      img.src = visualMap[key];
+      img.alt = elementData[key].name;
+      missingVisuals.appendChild(img);
+    });
+  }
 }
+
 
 showResultBtn.addEventListener("click", () => {
   const birth = parseBirthInputs();
@@ -179,14 +209,11 @@ showResultBtn.addEventListener("click", () => {
     birth.hour,
     birth.minute
   );
+  
 
   birthForm.classList.add("hide");
   testMain.classList.add("show");
   result.classList.add("show");
 
   renderElementResult(balance, birth.name);
-});
-
-goProduct.addEventListener("click", () => {
-  window.location.href = selectedLink;
-});
+}); 

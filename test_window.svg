@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520.91 1030.46">
+  <g id="test">
+    <polygon points="1519.41 1026.54 1.5 1028.95 1.5 3.91 1519.41 1.5 1519.41 1026.54" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+    <g>
+      <rect x="16.04" y="17.31" width="1486.39" height="38.75" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <rect x="1462.97" y="19.05" width="37.97" height="36.15" fill="#fff"/>
+      <line x1="1462.31" y1="18.78" x2="1462.31" y2="57.31" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+      <text transform="translate(1473.57 49.34)" font-family="MonaS12-Bold, MonaS12" font-size="32.85" font-weight="700"><tspan x="0" y="0">X</tspan></text>
+    </g>
+    <rect x="18.04" y="75.34" width="1482.74" height="933.14" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+    <text transform="translate(26.12 49.14)" fill="#fff" font-family="MonaS12-Bold, MonaS12" font-size="34.27" font-weight="700"><tspan x="0" y="0" letter-spacing="0em">F</tspan><tspan x="19.74" y="0" letter-spacing=".01em">i</tspan><tspan x="28.77" y="0" letter-spacing="0em">n</tspan><tspan x="48.84" y="0">d </tspan><tspan x="80.25" y="0" letter-spacing="0em">y</tspan><tspan x="99.99" y="0" letter-spacing="0em">o</tspan><tspan x="122.93" y="0" letter-spacing=".02em">u</tspan><tspan x="143.45" y="0">r </tspan><tspan x="172.01" y="0" letter-spacing=".02em">m</tspan><tspan x="198.25" y="0" letter-spacing="0em">i</tspan><tspan x="207.11" y="0" letter-spacing="0em">s</tspan><tspan x="227.17" y="0" letter-spacing=".01em">s</tspan><tspan x="247.54" y="0" letter-spacing=".01em">i</tspan><tspan x="256.57" y="0" letter-spacing=".01em">n</tspan><tspan x="276.95" y="0">g </tspan><tspan x="308.36" y="0" letter-spacing="0em">O</tspan><tspan x="333.92" y="0" letter-spacing="0em">U</tspan><tspan x="356.81" y="0">N </tspan></text>
+  </g>
+</svg>

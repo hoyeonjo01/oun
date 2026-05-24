@@ -1,0 +1,192 @@
+@font-face{
+    font-family:'MonaS12';
+    src:url('MonaS12.ttf') format('truetype');
+  }
+  
+  @font-face{
+    font-family:'MonaS12Bold';
+    src:url('MonaS12-Bold.ttf') format('truetype');
+  }
+  
+  html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#ffffff;
+    font-family:'MonaS12';
+  }
+  
+  .spray-page{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background:white;
+  }
+  
+  .spray-side{
+    position:absolute;
+    left:40px;
+    top:50px;
+    z-index:50;
+  }
+  
+  .spray-side-btn{
+    display:block;
+    width:220px;
+    height:54px;
+    margin-bottom:16px;
+    font-family:'MonaS12Bold';
+    font-size:24px;
+    background:white;
+    border:3px solid black;
+    box-shadow:7px 7px 0 black;
+    cursor:pointer;
+  }
+  
+  
+  .spray-window-wrap{
+    position:absolute;
+    left:300px;
+    top:18px;
+    width:1380px;
+    z-index:10;
+  }
+  
+  .spray-window{
+    width:100%;
+    display:block;
+  }
+  
+  .spray-card-area{
+    position:absolute;
+    left:120px;
+    top:115px;
+    width:1140px;
+    height:500px;
+    z-index:20;
+  }
+  
+  .spray-card{
+    position:absolute;
+    width:345px;
+    cursor:pointer;
+    transform-origin:center bottom;
+    transition:transform 0.25s ease;
+  }
+  
+  .wood{
+    left:0;
+    top:82px;
+    transform:rotate(-8deg);
+    z-index:5;
+  }
+  
+  .fire{
+    left:205px;
+    top:52px;
+    transform:rotate(-4deg);
+    z-index:4;
+  }
+  
+  .earth{
+    left:405px;
+    top:42px;
+    transform:rotate(0deg);
+    z-index:3;
+  }
+  
+  .metal{
+    left:605px;
+    top:52px;
+    transform:rotate(4deg);
+    z-index:2;
+  }
+  
+  .water{
+    left:810px;
+    top:82px;
+    transform:rotate(8deg);
+    z-index:1;
+  }
+  
+  /* hover */
+
+.wood:hover{
+    transform:rotate(-8deg) translateY(-32px) scale(1.04);
+    z-index:100;
+  }
+  
+  .fire:hover{
+    transform:rotate(-4deg) translateY(-32px) scale(1.04);
+    z-index:100;
+  }
+  
+  .earth:hover{
+    transform:rotate(0deg) translateY(-32px) scale(1.04);
+    z-index:100;
+  }
+  
+  .metal:hover{
+    transform:rotate(4deg) translateY(-32px) scale(1.04);
+    z-index:100;
+  }
+  
+  .water:hover{
+    transform:rotate(8deg) translateY(-32px) scale(1.04);
+    z-index:100;
+  }
+  
+  .spray-test-box{
+    position:absolute;
+  
+    left:50%;
+    transform:translateX(-50%);
+  
+    top:770px;
+  
+    width:1200px;
+    height:108px;
+  
+    border:3px solid black;
+    background:white;
+  
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  
+    padding:0 26px;
+    box-sizing:border-box;
+  
+    z-index:15;
+  }
+  
+  .test-text{
+    font-family:'MonaS12';
+    font-size:26px;
+  }
+  
+  .test-go-btn{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  
+    height:52px;
+    padding:0 14px;
+  
+    border:3px solid black;
+    background:white;
+  
+    box-shadow:5px 5px 0 black;
+  
+    font-family:'MonaS12Bold';
+    font-size:20px;
+  
+    cursor:pointer;
+  }
+  
+  .test-go-btn img{
+    width:24px;
+    display:block;
+  }

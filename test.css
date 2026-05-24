@@ -1,288 +1,195 @@
-@font-face{
-    font-family:'MonaS12';
-    src:url('MonaS12.ttf') format('truetype');
-  }
-  
-  @font-face{
-    font-family:'MonaS12Bold';
-    src:url('MonaS12-Bold.ttf') format('truetype');
-  }
-  
-  body{
-    margin:0;
-    background:#ffffff;
-    font-family:'MonaS12';
-    color:black;
-  }
-  
-  .back{
-    position:fixed;
-    top:28px;
-    left:32px;
-  
-    color:black;
-    text-decoration:none;
-    font-size:18px;
-  
-    z-index:10;
-  }
-  
-  .test-page{
-    min-height:100vh;
-    padding:90px 40px 60px;
-    box-sizing:border-box;
-  
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-  
-  h1{
-    margin:30px 0 24px;
-  
-    font-family:'MonaS12Bold';
-    font-size:46px;
-  }
-  
-  .guide{
-    text-align:center;
-    font-size:18px;
-    line-height:1.7;
-  
-    margin:0 0 32px;
-  }
-  
-  .result{
-    display:none;
-  
-    width:620px;
-  
-    border:2px solid black;
-    padding:26px 30px 30px;
-  
-    box-sizing:border-box;
-  }
-  
-  .result.show{
-    display:block;
-  }
-  
-  #resultTitle{
-    margin:0 0 24px;
-  
-    text-align:center;
-  
-    font-family:'MonaS12Bold';
-    font-size:30px;
-  }
-  
-  .graph{
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-  }
-  
-  .pillars{
-    margin:-12px 0 28px;
-    text-align:center;
-    font-size:16px;
-    color:#444;
-  }
+@font-face{font-family:'MonaS12';src:url('MonaS12.ttf') format('truetype');}
+@font-face{font-family:'MonaS12Bold';src:url('MonaS12-Bold.ttf') format('truetype');}
 
-  .form-error{
-    margin:-8px 0 20px;
-    color:#c0392b;
-    font-size:16px;
-    text-align:center;
-  }
+html, body{
+  margin:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:white;
+  font-family:'MonaS12';
+}
 
-  .graph-row{
-    display:grid;
-    grid-template-columns:90px 1fr 52px;
-    align-items:center;
-    gap:16px;
-  }
-  
-  .graph-row span{
-    font-size:18px;
-  }
-  
-  .bar{
-    height:24px;
-  
-    border:2px solid black;
-    background:#eeeeee;
-  
-    overflow:hidden;
-  }
-  
-  .bar div{
-    height:100%;
-    width:0%;
-    background:#dddddd;
-    transition:width 0.8s cubic-bezier(0.65,0,0.35,1);
-  }
+.test-page{
+  position:relative;
+  width:100vw;
+  height:100vh;
+}
 
-  .graph-row .pct{
-    font-size:16px;
-    text-align:right;
-  }
+.test-side{
+  position:absolute;
+  left:40px;
+  top:50px;
+  z-index:50;
+}
 
-  .graph-row.active{
-    outline:3px solid black;
-    outline-offset:4px;
-    border-radius:2px;
-  }
+.test-side-btn{
+  display:block;
+  width:220px;
+  height:54px;
+  margin-bottom:16px;
+  font-family:'MonaS12Bold';
+  font-size:24px;
+  background:white;
+  border:3px solid black;
+  box-shadow:7px 7px 0 black;
+  cursor:pointer;
+}
 
-  .graph-row.active > span:first-child{
-    font-family:'MonaS12Bold';
-  }
+.test-window-wrap{
+  position:absolute;
+  left:300px;
+  top:18px;
+  width:1380px;
+  z-index:10;
+}
 
-  .graph-row.wood .bar div{ background:#b8e3e2; }
-  .graph-row.fire .bar div{ background:#f5c0d5; }
-  .graph-row.soil .bar div{ background:#fbf0a0; }
-  .graph-row.metal .bar div{ background:#e8edf1; }
-  .graph-row.water .bar div{ background:#9fd4eb; }
+.test-window{
+  width:100%;
+  display:block;
+}
 
-  .graph-row.wood.active .bar div{ background:#7bc9c8; }
-  .graph-row.fire.active .bar div{ background:#ee8db4; }
-  .graph-row.soil.active .bar div{ background:#f8e748; }
-  .graph-row.metal.active .bar div{ background:#dce3e9; }
-  .graph-row.water.active .bar div{ background:#3ba0cf; }
-  
-  .recommend{
-    margin:24px 0 20px;
-  
-    text-align:center;
-    font-size:18px;
-    line-height:1.6;
-  }
-  
-  .product-btn{
-    display:block;
-    margin:0 auto;
-  
-    font-family:'MonaS12';
-    font-size:18px;
-  
-    padding:12px 22px;
-  
-    border:2px solid black;
-    background:white;
-  
-    cursor:pointer;
-  
-    transition:0.2s;
-  }
-  
-  .product-btn:hover{
-    transform:scale(1.05);
-  }
+.birth-form,
+.test-main{
+  position:absolute;
+  inset:90px 70px 70px 70px;
+}
 
-  .birth-form,
-  .test-main{
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
+.test-main{display:none;}
+.test-main.show{display:block;}
+.birth-form.hide{display:none;}
 
-  .test-main{
-    display:none;
-  }
+h1{
+  font-family:'MonaS12Bold';
+  font-size:42px;
+  margin:40px 0 24px;
+  text-align:center;
+}
 
-  .test-main.show{
-    display:flex;
-  }
+.guide,
+.pillars{
+  text-align:center;
+  font-size:20px;
+}
 
-  .birth-form.hide{
-    display:none;
-  }
+.form-fields{
+  width:440px;
+  margin:40px auto 28px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
 
-  .form-fields{
-    width:420px;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
+.form-fields label{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  font-size:18px;
+}
 
-    margin-bottom:28px;
-  }
+.form-fields input{
+  font-family:'MonaS12';
+  font-size:18px;
+  padding:12px;
+  border:2px solid black;
+}
 
-  .form-fields label{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-  }
+.checkbox-label{
+  flex-direction:row !important;
+  align-items:center;
+}
 
-  .form-fields label span{
-    font-size:18px;
-  }
+.submit-btn{
+  display:block;
+  margin:0 auto;
+  font-family:'MonaS12Bold';
+  font-size:20px;
+  padding:12px 28px;
+  border:3px solid black;
+  background:white;
+  box-shadow:6px 6px 0 black;
+  cursor:pointer;
+}
 
-  .form-fields input{
-    width:100%;
-    box-sizing:border-box;
+.result{
+  width:720px;
+  margin:-20px auto 0;
+  border:3px solid black;
+  padding:34px 38px;
+  box-sizing:border-box;
+}
 
-    font-family:'MonaS12';
-    font-size:18px;
+.graph{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
 
-    padding:12px 14px;
+.graph-row{
+  display:grid;
+  grid-template-columns:100px 1fr 60px;
+  align-items:center;
+  gap:16px;
+}
 
-    border:2px solid black;
-    background:white;
+.graph-row span{
+  font-size:22px;
+}
 
-    color:black;
-  }
+.bar{
+  height:28px;
+  border:3px solid black;
+  background:#eee;
+}
 
-  .form-fields input:focus{
-    outline:none;
-    transform:scale(1.02);
-    transition:0.2s;
-  }
+.fill{
+  height:100%;
+  width:0%;
+  transition:width 0.8s cubic-bezier(0.65,0,0.35,1);
+}
 
-  .form-fields input.input-invalid{
-    border-color:#c0392b;
-  }
+.graph-row.active{
+  outline:4px solid black;
+  outline-offset:4px;
+  border-radius:5px;
+}
 
-  .form-fields input:disabled{
-    background:#f5f5f5;
-    color:#888;
-    cursor:not-allowed;
-  }
+.graph-row.active > span:first-child{
+  font-family:'MonaS12Bold';
+}
 
-  .checkbox-label{
-    flex-direction:row;
-    align-items:center;
-    gap:10px;
-    cursor:pointer;
-  }
+.graph-row.wood .fill{background:#b8e3e2;}
+.graph-row.fire .fill{background:#f5c0d5;}
+.graph-row.soil .fill{background:#fbf0a0;}
+.graph-row.metal .fill{background:#e8edf1;}
+.graph-row.water .fill{background:#9fd4eb;}
 
-  .checkbox-label input[type="checkbox"]{
-    width:18px;
-    height:18px;
-    padding:0;
-    margin:0;
-    cursor:pointer;
-    accent-color:black;
-  }
+.recommend{
+  margin:28px 0 0;
+  font-size:22px;
+  line-height:1.5;
+  text-align:center;
+}
 
-  .checkbox-label span{
-    font-size:16px;
-  }
+.missing-area{
+  position:absolute;
+  left:200px;
+  bottom:5px;
+  display:flex;
+  align-items:center;
+  gap:90px;
+}
 
-  .submit-btn{
-    font-family:'MonaS12';
-    font-size:18px;
+.missing-title{
+  font-family:'MonaS12Bold';
+  font-size:42px;
+}
 
-    padding:12px 28px;
+.missing-visuals{
+  display:flex;
+  gap:40px;
+}
 
-    border:2px solid black;
-    background:white;
-
-    cursor:pointer;
-
-    transition:0.2s;
-  }
-
-  .submit-btn:hover{
-    transform:scale(1.05);
-  }
+.missing-visuals img{
+  width:330px;
+}

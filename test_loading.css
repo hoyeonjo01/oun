@@ -67,28 +67,3 @@
     font-family:'MonaS12Bold';
     font-size:42px;
   }
-
-  .back-main{
-    position:fixed;
-  
-    bottom:40px;
-    left:50%;
-  
-    transform:translateX(-50%);
-  
-    font-family:'MonaS12';
-    font-size:18px;
-  
-    color:black;
-    text-decoration:none;
-  
-    border-bottom:2px solid black;
-  
-    cursor:pointer;
-  
-    transition:0.2s;
-  }
-  
-  .back-main:hover{
-    opacity:0.6;
-  }

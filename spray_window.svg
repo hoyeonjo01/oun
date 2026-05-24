@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520.91 1030.46">
+  <g id="oh_spray" data-name="oh spray">
+    <g>
+      <polygon points="1519.41 1026.54 1.5 1028.95 1.5 3.91 1519.41 1.5 1519.41 1026.54" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+      <g>
+        <rect x="16.04" y="17.31" width="1486.39" height="38.75" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+        <rect x="1462.97" y="19.05" width="37.97" height="36.15" fill="#fff"/>
+        <line x1="1462.31" y1="18.78" x2="1462.31" y2="57.31" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="4"/>
+        <text transform="translate(1473.57 49.34)" font-family="MonaS12-Bold, MonaS12" font-size="32.85" font-weight="700"><tspan x="0" y="0">X</tspan></text>
+      </g>
+      <rect x="18.04" y="75.34" width="1482.74" height="933.14" fill="#efefef" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+    <text transform="translate(21.47 48.77)" fill="#fff" font-family="MonaS12-Bold, MonaS12" font-size="35" font-weight="700"><tspan x="0" y="0" letter-spacing="-.05em">I</tspan><tspan x="12.98" y="0" letter-spacing="0em">t</tspan><tspan x="30.2" y="0" letter-spacing=".01em">e</tspan><tspan x="51.06" y="0" letter-spacing="0em">m</tspan><tspan x="77.65" y="0" letter-spacing="0em">s</tspan><tspan x="97.98" y="0" letter-spacing="-.02em">_</tspan><tspan x="114.64" y="0" letter-spacing="0em">O</tspan><tspan x="141.13" y="0" letter-spacing="0em">h </tspan><tspan x="173.21" y="0" letter-spacing="0em">S</tspan><tspan x="196.6" y="0" letter-spacing="0em">p</tspan><tspan x="217.14" y="0" letter-spacing="0em">r</tspan><tspan x="234.36" y="0" letter-spacing="0em">a</tspan><tspan x="254.58" y="0">y</tspan></text>
+  </g>
+</svg>

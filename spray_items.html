@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OUN Spray Items</title>
+  <link rel="stylesheet" href="spray_items.css">
+</head>
+
+<body>
+  <main class="spray-page">
+
+    <div class="spray-side">
+
+        <button class="spray-side-btn"
+                onclick="location.href='main.html'">
+          홈으로
+        </button>
+      
+        <button class="spray-side-btn"
+                onclick="location.href='story1.html'">
+          스토리 설명
+        </button>
+      
+        <button class="spray-side-btn"
+                onclick="location.href='shop.html'">
+          ◁ Back
+        </button>
+      
+      </div>
+
+    <div class="spray-window-wrap">
+      <img src="spray_window.svg" class="spray-window">
+
+      <div class="spray-card-area">
+        <img src="wood_card.svg" class="spray-card wood" onclick="location.href='spray_wood.html'">
+        <img src="fire_card.svg" class="spray-card fire" onclick="location.href='spray_fire.html'">
+        <img src="earth_card.svg" class="spray-card earth" onclick="location.href='spray_earth.html'">
+        <img src="metal_card.svg" class="spray-card metal" onclick="location.href='spray_metal.html'">
+        <img src="water_card.svg" class="spray-card water" onclick="location.href='spray_water.html'">
+      </div>
+
+      <div class="spray-test-box">
+        <div class="test-text">어떤 오행이 필요한 지 모르겠다면?</div>
+
+        <button class="test-go-btn" onclick="location.href='test_loading.html'">
+          <img src="test_arrow.svg" alt="">
+          <span>사주 검사 하러가기</span>
+        </button>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

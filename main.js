@@ -1,4 +1,4 @@
-const luckButton = document.querySelector(".luck-button-wrap");
+const testArea = document.querySelector(".test-area");
 const talismanCard = document.querySelector(".talisman-card");
 const sprayBox = document.querySelector(".spray-box");
 const elementEffects = document.querySelector(".element-effects");
@@ -10,20 +10,17 @@ const effectImages = [
   ["effect_metal_1.svg", "effect_metal_2.svg"],
   ["effect_water_1.svg", "effect_water_2.svg"]
 ];
+const roomBuff = document.querySelector(".room-buff");
 
 let colorIndex = 0;
 let sprayAnimating = false;
 let clickTimer = null;
 
 // 테스트 버튼 클릭
-luckButton.addEventListener("click", () => {
+testArea.addEventListener("click", () => {
   window.location.href = "test_loading.html";
 });
 
-// 부적 클릭
-talismanCard.addEventListener("click", () => {
-  window.location.href = "talisman.html";
-});
 
 // 룸스프레이 한 번 클릭: 회전 + 오행 그래픽
 sprayBox.addEventListener("click", () => {
@@ -36,7 +33,7 @@ sprayBox.addEventListener("click", () => {
 
     const currentIndex = colorIndex;
 
-    sprayBox.classList.add("rotate");
+    document.querySelector(".spray-area").classList.add("rotate");
 
     setTimeout(() => {
 
@@ -62,7 +59,7 @@ sprayBox.addEventListener("click", () => {
     colorIndex = (colorIndex + 1) % effectImages.length;
 
     setTimeout(() => {
-      sprayBox.classList.remove("rotate");
+      document.querySelector(".spray-area").classList.remove("rotate");
 
       roomColor.classList.remove("spray");
       roomColor.style.background = "transparent";
@@ -75,11 +72,6 @@ sprayBox.addEventListener("click", () => {
   }, 220);
 });
 
-// 룸스프레이 더블클릭: 상세페이지 이동
-sprayBox.addEventListener("dblclick", () => {
-  clearTimeout(clickTimer);
-  window.location.href = "spray.html";
-});
 
 // 방 위에 오행 그래픽 띄우기
 function showElementEffects(imageList){
@@ -129,22 +121,13 @@ function showElementEffects(imageList){
 
 }
 
-// 포스텔러 갔다온 상태 표시
-if(sessionStorage.getItem("visitedTest")){
-  const popup = document.getElementById("returnPopup");
 
-  setTimeout(() => {
-    popup.classList.add("show");
-  }, 500);
+talismanCard.addEventListener("click", () => {
 
-  sessionStorage.removeItem("visitedTest");
-}
+  roomBuff.classList.remove("active");
 
-// 팝업 버튼
-document.getElementById("goSpray").addEventListener("click", () => {
-  window.location.href = "spray.html";
-});
+  void roomBuff.offsetWidth;
 
-document.getElementById("closePopup").addEventListener("click", () => {
-  document.getElementById("returnPopup").classList.remove("show");
+  roomBuff.classList.add("active");
+
 });

@@ -1,0 +1,143 @@
+@font-face{
+    font-family:'MonaS12';
+    src:url('MonaS12.ttf') format('truetype');
+  }
+  
+  @font-face{
+    font-family:'MonaS12Bold';
+    src:url('MonaS12-Bold.ttf') format('truetype');
+  }
+  
+  html,
+  body{
+    margin:0;
+    padding:0;
+  
+    width:100%;
+    height:100%;
+  
+    overflow:hidden;
+  
+    background:#ffffff;
+  }
+  
+  body{
+    font-family:'MonaS12';
+  }
+  
+  .shop-page{
+    position:relative;
+  
+    width:100vw;
+    height:100vh;
+  
+    background:white;
+  }
+  
+  /* ---------------- */
+  /* 왼쪽 버튼 */
+  /* ---------------- */
+  
+  .shop-side{
+    position:absolute;
+  
+    left:40px;
+    top:50px;
+    z-index:50;
+  }
+  
+  .shop-side-btn{
+    display:block;
+  
+    width:220px;
+    height:54px;
+  
+    margin-bottom:16px;
+  
+    font-family:'MonaS12Bold';
+    font-size:24px;
+  
+    background:white;
+  
+    border:3px solid black;
+  
+    box-shadow:7px 7px 0 black;
+  
+    cursor:pointer;
+  }
+  
+  /* ---------------- */
+  /* 상점 창 */
+  /* ---------------- */
+  
+  .shop-window-wrap{
+    position:absolute;
+  
+    left:300px;
+    top:18px;
+  
+    width:1380px;
+  
+    z-index:10;
+  }
+  
+  .shop-window{
+    width:100%;
+    display:block;
+  }
+  
+  /* ---------------- */
+  /* 상품 카드 */
+  /* ---------------- */
+  
+  .shop-card{
+    position:absolute;
+  
+    cursor:pointer;
+  
+    transition:transform 0.2s ease;
+  }
+  
+  .shop-card:hover{
+    transform:scale(1.03);
+  }
+  
+  .shop-card img{
+    width:100%;
+    display:block;
+  }
+  
+  /* 오행분사 */
+  
+  .spray-card{
+    left:130px;
+    top:120px;
+  
+    width:540px;
+  }
+  
+  /* 데일리버프 */
+  
+  .buff-card{
+    left:710px;
+    top:120px;
+  
+    width:540px;
+  }
+  
+  /* ---------------- */
+  /* HOT 아이콘 */
+  /* ---------------- */
+  
+  .hot-icon{
+    position:absolute;
+  
+    left:40px;
+    top:470px;
+  
+    width:190px;
+  
+    z-index:40;
+  
+    pointer-events:none;
+  }
