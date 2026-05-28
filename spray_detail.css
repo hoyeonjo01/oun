@@ -10,6 +10,8 @@
   
   html,
   body{
+    -webkit-font-smoothing:none;
+    text-rendering:geometricPrecision;
     margin:0;
     padding:0;
   
@@ -92,11 +94,11 @@
   
     pointer-events:none;
   
-    opacity:0.5;
+    opacity:0.82;
   
-    filter:blur(12px);
+    filter:blur(8px);
   
-    transform:scale(1.15);
+    transform:scale(1.18);
   }
   
   /* 목 */
@@ -153,9 +155,9 @@
     background:
     radial-gradient(
       circle at 100% 0%,
-      #6ca1ee 0%,
-      #6ca1ee 35%,
-      transparent 78%
+    #3a9bcf 0%,
+    #3a9bcf 35%,
+    transparent 78%
     );
   }
   
@@ -191,7 +193,7 @@
   
   .buff-row{
     display:grid;
-    grid-template-columns:120px 1fr 58px;
+    grid-template-columns:170px 1fr 58px;
   
     align-items:center;
   
@@ -201,6 +203,10 @@
   
     font-family:'MonaS12';
     font-size:22px;
+  }
+
+  .buff-row span{
+    white-space:nowrap;
   }
   
   .buff-desc{
@@ -225,10 +231,38 @@
   
     box-sizing:border-box;
   }
-  
+
   .buff-bar div{
     height:100%;
-  
-    background:#7bc9c8;
   }
   
+  /* 목 */
+
+.wood-page .buff-bar div{
+  background:#88d0c9;
+}
+
+/* 화 */
+
+.fire-page .buff-bar div{
+  background:#e98eb4;
+}
+
+/* 토 */
+
+.soil-page .buff-bar div{
+  background:#f0d35f;
+}
+
+/* 금 */
+
+.metal-page .buff-bar div{
+  background:#dce3e9;
+}
+
+/* 수 */
+
+.water-page .buff-bar div{
+  background:#3a9bcf;
+}
+

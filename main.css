@@ -9,6 +9,8 @@
 }
 
 html, body{
+  -webkit-font-smoothing:none;
+  text-rendering:geometricPrecision;
   margin:0;
   padding:0;
   width:100%;

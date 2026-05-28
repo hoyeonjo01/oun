@@ -2,6 +2,8 @@
 @font-face{font-family:'MonaS12Bold';src:url('MonaS12-Bold.ttf') format('truetype');}
 
 html, body{
+  -webkit-font-smoothing:none;
+  text-rendering:geometricPrecision;
   margin:0;
   width:100%;
   height:100%;
@@ -112,32 +114,35 @@ h1{
 }
 
 .result{
-  width:720px;
-  margin:-20px auto 0;
+  width:1000px;
+  margin:20px auto 0;
   border:3px solid black;
-  padding:34px 38px;
+  padding:20px 44px 16px;
   box-sizing:border-box;
 }
 
 .graph{
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap:16px;
 }
 
 .graph-row{
   display:grid;
-  grid-template-columns:100px 1fr 60px;
+  grid-template-columns:180px 1fr 90px;
   align-items:center;
-  gap:16px;
+  gap:18px;
 }
 
 .graph-row span{
   font-size:22px;
+  white-space:nowrap;
+  word-break:keep-all;
+  overflow:visible;
 }
 
 .bar{
-  height:28px;
+  height:22px;
   border:3px solid black;
   background:#eee;
 }
@@ -158,17 +163,19 @@ h1{
   font-family:'MonaS12Bold';
 }
 
-.graph-row.wood .fill{background:#b8e3e2;}
-.graph-row.fire .fill{background:#f5c0d5;}
-.graph-row.soil .fill{background:#fbf0a0;}
-.graph-row.metal .fill{background:#e8edf1;}
-.graph-row.water .fill{background:#9fd4eb;}
+.graph-row.wood .fill{background:#88d0c9;}
+.graph-row.fire .fill{background:#e98eb4;}
+.graph-row.soil .fill{background:#f0d35f;}
+.graph-row.metal .fill{background:#dce3e9;}
+.graph-row.water .fill{background:#3a9bcf;}
 
 .recommend{
-  margin:28px 0 0;
-  font-size:22px;
-  line-height:1.5;
+  margin:22px 0 0;
+  font-size:24px;
+  line-height:1.4;
   text-align:center;
+  white-space:nowrap;
+  word-break:keep-all;
 }
 
 .missing-area{
