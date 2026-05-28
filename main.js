@@ -11,6 +11,9 @@ const effectImages = [
   ["effect_water_1.svg", "effect_water_2.svg"]
 ];
 const roomBuff = document.querySelector(".room-buff");
+const roomGlow = document.querySelector(".room-effect-glow");
+const roomImg = document.querySelector(".room");
+
 
 let colorIndex = 0;
 let sprayAnimating = false;
@@ -123,11 +126,27 @@ function showElementEffects(imageList){
 
 
 talismanCard.addEventListener("click", () => {
+  playBuffEffect();
+});
+
+function playBuffEffect() {
 
   roomBuff.classList.remove("active");
+  roomGlow.classList.remove("buff-active");
+  roomImg.classList.remove("buff-active");
 
   void roomBuff.offsetWidth;
 
   roomBuff.classList.add("active");
+  roomGlow.classList.add("buff-active");
+  roomImg.classList.add("buff-active");
 
-});
+  setTimeout(() => {
+
+    roomBuff.classList.remove("active");
+    roomGlow.classList.remove("buff-active");
+    roomImg.classList.remove("buff-active");
+
+  }, 1800);
+
+}
