@@ -35,8 +35,25 @@
 
     <div class="detail-window-wrap">
 
-      <img src="spray_metal_detail.svg"
-           class="detail-window">
+      <img src="spray_metal_detail.svg" class="detail-window">
+
+      <div
+        class="product-gallery"
+        data-images="SilverVelvet_01.jpeg,SilverVelvet_02.jpeg,SilverVelvet_03.jpeg"
+      >
+
+        <button class="gallery-btn gallery-prev" type="button">◀</button>
+
+        <img
+          id="productPhoto"
+          class="product-photo"
+          src="SilverVelvet_01.jpeg"
+          alt="Silver Velvet product photo"
+        >
+
+        <button class="gallery-btn gallery-next" type="button">▶</button>
+
+      </div>
 
       <div class="buff-effect-content">
 
@@ -73,7 +90,19 @@
 
     </div>
 
+    <div class="image-modal" id="imageModal">
+
+      <button class="modal-btn modal-prev">◀</button>
+
+      <img id="modalImage" src="" alt="">
+
+      <button class="modal-btn modal-next">▶</button>
+
+    </div>
+
   </main>
+
+  <script src="spray_detail.js"></script>
 
 </body>
 </html>

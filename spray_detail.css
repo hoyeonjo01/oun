@@ -266,3 +266,117 @@
   background:#3a9bcf;
 }
 
+.product-gallery{
+  position:absolute;
+
+  left:10px;
+  top:130px;
+
+  width:540px;
+  height:420px;
+
+  overflow:hidden;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2.5px solid #000;
+  box-sizing:border-box;
+  
+}
+
+
+.product-photo{
+  width:95%;
+  height:105%;
+  object-fit:contain;
+  
+}
+
+.gallery-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+
+  z-index:20;
+
+  width:42px;
+  height:42px;
+
+  border:3px solid #000;
+  background:#fff;
+  color:#000;
+
+  font-size:22px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.gallery-prev{
+  left:14px;
+}
+
+.gallery-next{
+  right:14px;
+}
+
+.image-modal{
+  position:fixed;
+  inset:0;
+
+  background:rgba(0,0,0,0.8);
+
+  display:none;
+
+  align-items:center;
+  justify-content:center;
+
+  z-index:9999;
+}
+
+.image-modal.active{
+  display:flex;
+}
+
+.image-modal img{
+  max-width:90vw;
+  max-height:90vh;
+
+  border:4px solid #000;
+  background:#fff;
+}
+
+.modal-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+
+  width:60px;
+  height:60px;
+
+  border:3px solid #000;
+  background:#fff;
+
+  font-size:28px;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  z-index:10000;
+}
+
+.modal-prev{
+  left:40px;
+}
+
+.modal-next{
+  right:40px;
+}
+
+.image-modal img{
+  max-width:80vw;
+  max-height:85vh;
+
+  border:4px solid #000;
+  background:#fff;
+}
